@@ -1,0 +1,138 @@
+/* ==========================================================================
+   1. RESETEO Y ESTILOS BASE
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+/* ==========================================================================
+   2. BARRA DE NAVEGACIÓN (HEADER + NAV)
+   ========================================================================== */
+header {
+    background-color:#0066cc;
+    display: flex;
+    justify-content: space-between; /* Envía el título a la izquierda y el menú a la derecha */
+    align-items: center;            /* Centrado vertical */
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;                /* Se adapta a pantallas de celulares */
+    gap: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.15); /* Fondo blanco sutil transparente */
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    background: #ffffff;
+    color: #0066cc;
+}
+
+/* ==========================================================================
+   3. TEXTOS Y SEPARADORES
+   ========================================================================== */
+h2, h3 {
+    color: #111;
+    margin: 20px 0 10px;
+}
+
+p {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 25px 0;
+}
+
+/* ==========================================================================
+   4. FORMULARIO DE RESERVA
+   ========================================================================== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+input, select {
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: #f8fafc;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #0066cc;
+    background-color: #fff;
+}
+
+/* Botón estilo WhatsApp */
+button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #128C7E;
+}
+
+button:active {
+    transform: scale(0.98); /* Simula el efecto de presionar un botón físico */
+}
