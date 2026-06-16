@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            Bienvenidos a Explora Tours El Salvador
+        </header>
+        <header>
+    <span>Explora Tours SV</span>
+    <nav>
+        <a href="surf.html">Surf City</a>
+        <a href="cerro.html">Cerro Verde</a>
+        <a href="majaual.html">El Majahual</a>
+    </nav>
+</header>
+        <h2>Explora El Salvador</h2>
+        <p>Con Explora Tours El Salvador puedes reservar tours para todo El Salvador</p>
+        <hr>
+        <h3>¡Reserva tu Tour con nosotros!</h3>
+        <p>Completa tus datos para enviarte más información por whatsapp.</p>
+        
+        <form id="tourForm">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" placeholder="Dennis Chavez" required>
+            <label for="telefono">Número de Teléfono / WhatsApp:</label>
+            <input type="tel" id="telefono" placeholder="Ej. 6116-2962" required>
+            
+            <label for="destino">Selecciona tu destino:</label>
+            <select id="destino">
+                <option value="Surf City">Surf City</option>
+                <option value="Cerro Verde">Cerro Verde</option>
+                <option value="El Majagual">El Majagual</option>
+            </select>
+            
+            <button type="submit">
+                Enviar por WhatsApp
+            </button>
+        </form>
+        <div id="mensajeExito"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
